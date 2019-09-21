@@ -50,8 +50,8 @@ class Student
   end
   
   def self.new_from_db(row) 
-    p row
+  
     new_stud = Student.new(row[0],row[1],row[2])
-    p new_stud.id
+    new_stud
   end
 end
